@@ -26,5 +26,5 @@ jobs:
         token: ${{secrets.PAT}}
     - run: |
         # do something
-        git subtree push -f --prefix=backend origin heroku
+        git subtree push --prefix=backend origin heroku
 
