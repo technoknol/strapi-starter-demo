@@ -20,7 +20,9 @@ jobs:
     # the checkout action persists the passed credentials by default
     # subsequent git commands will pick them up automatically
     - uses: actions/checkout@v2
+      
       with:
+        ref: heroku
         token: ${{secrets.PAT}}
     - run: |
         # do something
