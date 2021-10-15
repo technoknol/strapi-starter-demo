@@ -22,9 +22,9 @@ jobs:
     - uses: actions/checkout@v2
       
       with:
-        ref: heroku
         token: ${{secrets.PAT}}
     - run: |
         # do something
+        git fetch --all
         git subtree push --prefix=backend origin heroku
 
