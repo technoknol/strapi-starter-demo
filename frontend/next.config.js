@@ -3,4 +3,8 @@ module.exports = {
     locales: ['en', 'fr'],
     defaultLocale: 'en',
   },
+  images: {
+    loader: "custom",
+    path: "https://example.com/myaccount/",
+  },
 }

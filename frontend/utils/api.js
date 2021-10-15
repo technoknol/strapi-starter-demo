@@ -17,6 +17,7 @@ export async function fetchAPI(path, options = {}) {
   }
   const requestUrl = getStrapiURL(path)
   const response = await fetch(requestUrl, mergedOptions)
+  console.log('response ', requestUrl )
 
   if (!response.ok) {
     console.error(response.statusText)
